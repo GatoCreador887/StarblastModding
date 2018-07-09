@@ -16,8 +16,14 @@ imported.src = 'https://cdn.rawgit.com/GatoCreador887/StarblastModding/master/Mo
 imported.onload = notifyLoaded;
 imported.onreadystatechange = notifyLoaded;
 document.head.appendChild(imported);
-
+```
+Use
+```
 if (scriptLoaded) {
-  //Dependent code here...
+  var vel = randomVelocity(0.25);
 }
+```
+or
+```
+var vel = scriptLoaded ? randomVelocity(0.25) : undefined;
 ```
