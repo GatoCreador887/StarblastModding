@@ -7,6 +7,7 @@ var scriptLoaded = false;
 
 var notifyLoaded = function() {
   scriptLoaded = true;
+  echo("Script Loaded");
 };
 
 var imported = document.createElement('script');
