@@ -11,7 +11,7 @@ var notifyLoaded = function() {
 
 var imported = document.createElement('script');
 imported.type = 'text/javascript';
-imported.src = 'https://rawgit.com/GatoCreador887/StarblastModding/master/ModdingUtils.js';
+imported.src = 'https://cdn.rawgit.com/GatoCreador887/StarblastModding/master/ModdingUtils.js';
 imported.onload = notifyLoaded;
 imported.onreadystatechange = notifyLoaded;
 document.head.appendChild(imported);
