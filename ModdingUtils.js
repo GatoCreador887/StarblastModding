@@ -18,4 +18,4 @@ function chooseRandom(choices) {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
-var EXPORTED_SYMBOLS = ["randomIntInRange", "randomDecimalInRange", "randomVelocity", "chooseRandom"];
+export {randomIntInRange, randomDecimalInRange, randomVelocity, chooseRandom}; 
