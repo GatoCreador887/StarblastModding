@@ -17,7 +17,7 @@ imported.onload = notifyLoaded;
 imported.onreadystatechange = notifyLoaded;
 document.head.appendChild(imported);
 ```
-Use
+For dependent code, use
 ```
 if (scriptLoaded) {
   var vel = randomVelocity(0.25);
