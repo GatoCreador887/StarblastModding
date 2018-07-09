@@ -18,4 +18,4 @@ function chooseRandom(choices) {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
-export {randomIntInRange, randomDecimalInRange, randomVelocity, chooseRandom}; 
+export { randomIntInRange, randomDecimalInRange, randomVelocity, chooseRandom }; 
