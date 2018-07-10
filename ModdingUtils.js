@@ -11,9 +11,16 @@ function randomVelocity(speed) {
   var vx = speed * Math.cos(phi);
   var vy = speed * Math.sin(phi);
   
-  return {vx:vx,vy:vy};
+  return {"vx":vx, "vy":vy};
 }
 
 function chooseRandom(choices) {
   return choices[Math.floor(Math.random() * choices.length)];
+}
+
+function chooseRandomIdx(choices) {
+  var idx = Math.floor(Math.random() * choices.length);
+  var choice = choices[idx];
+  
+  return {"choice":choice, "idx":idx};
 }
