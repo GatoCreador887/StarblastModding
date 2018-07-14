@@ -318,6 +318,12 @@
 						}
 					}
 				}
+				
+				if (mouseY > 0 && mouseY < canvasSize && mouseX > 0 && mouseX < canvasSize) {
+					context.font = "12px Sans-Serif";
+					context.fillStyle = "#CDE";
+					context.fillText(Math.floor(mouseX / gridSize) + ", " + Math.floor(mouseY / gridSize), mouseX + 7, mouseY - 7);
+				}
 			}
 			
 			var drawTimerId = setInterval(draw, 50);
