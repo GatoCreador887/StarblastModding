@@ -12,7 +12,7 @@ var notifyLoaded = function() {
 
 var imported = document.createElement('script');
 imported.type = 'text/javascript';
-imported.src = 'https://cdn.rawgit.com/GatoCreador887/StarblastModding/master/ModdingUtils.js';
+imported.src = 'https://cdn.jsdelivr.net/gh/GatoCreador887/StarblastModding@fdd95237c3ea81633d006244e607324134ea9652/ModdingUtils.js';
 imported.onload = notifyLoaded;
 imported.onreadystatechange = notifyLoaded;
 document.head.appendChild(imported);
@@ -27,3 +27,5 @@ or
 ```
 var vel = scriptLoaded ? randomVelocity(0.25) : undefined;
 ```
+**Note:** I switched the link to jsdelivr because rawgit is shutting down. If you want the old link, here it is:
+'https://cdn.rawgit.com/GatoCreador887/StarblastModding/master/ModdingUtils.js'
