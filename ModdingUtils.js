@@ -39,7 +39,7 @@ function chooseRandomChance(choices) {
     accumulatedChance += choice.chance;
     
     if (decider < accumulatedChance) {
-      return choice;
+      return choice.value;
     }
   }
 }
