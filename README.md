@@ -2,6 +2,7 @@
 Has images etc. for Starblast mods, free to use.
 
 ## Importing my library
+Replace `<commitId>` in the URL with a commit id (such as `261c0f0709eff3d88ac65811b3b29c5e24c7430c`). It is recommended to use the latest commit's id.
 ```
 var scriptLoaded = false;
 
@@ -12,7 +13,7 @@ var notifyLoaded = function() {
 
 var imported = document.createElement('script');
 imported.type = 'text/javascript';
-imported.src = 'https://cdn.jsdelivr.net/gh/GatoCreador887/StarblastModding@fdd95237c3ea81633d006244e607324134ea9652/ModdingUtils.js';
+imported.src = 'https://cdn.jsdelivr.net/gh/GatoCreador887/StarblastModding@<commitId>/ModdingUtils.js';
 imported.onload = notifyLoaded;
 imported.onreadystatechange = notifyLoaded;
 document.head.appendChild(imported);
